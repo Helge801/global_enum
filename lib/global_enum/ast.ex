@@ -1,4 +1,6 @@
 defmodule GlobalEnum.Ast do
+  @moduledoc false
+
   def define_function_with_spec_and_doc(%{name: name, return: return, doc: doc, meta: meta}) do
     {:__block__, [],
      [
@@ -78,7 +80,6 @@ defmodule GlobalEnum.Ast do
      ]}
   end
 
-  # TODO: create eject task
   def ast_to_string(ast) do
     ast
     |> Code.quoted_to_algebra()

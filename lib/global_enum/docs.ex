@@ -1,4 +1,6 @@
 defmodule GlobalEnum.Docs do
+  @moduledoc false
+
   @indent "  "
 
   def format_list(list) do

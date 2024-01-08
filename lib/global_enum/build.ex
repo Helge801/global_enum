@@ -1,4 +1,6 @@
 defmodule GlobalEnum.Build do
+  @moduledoc false
+
   defmacro define_values_guard(name) do
     quote bind_quoted: [name: name] do
       # define guard for enum type

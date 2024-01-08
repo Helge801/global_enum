@@ -1,4 +1,6 @@
 defmodule GlobalEnum.Support.TestEnums do
+  @moduledoc false
+
   use GlobalEnum
 
   enum(:cars, [
